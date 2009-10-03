@@ -1,4 +1,4 @@
-=== CommentLuv ===
+=== TwitterLink Comments ===
 Contributors: @commentluv (concept & coding) Gianni (translation and localization help)
 Donate link:http://comluv.com/about/donate
 Tags: twitter, comment form, follow me
