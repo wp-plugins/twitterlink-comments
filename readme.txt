@@ -60,7 +60,7 @@ You can submit a support ticket at http://comluv.com
 
 == Configuration ==
 
-* Add twitter field automatically -> Choose NO if you wish to add the field to your comments.php template yourself. (use name="atf_twitter_id")
+* Add twitter field automatically -> Choose NO if you wish to add the field to your comments.php template yourself. (use `name="atf_twitter_id"`)
 
 * CSS classes -> The name of the class to use for the DIV and INPUT. Only alphanumeric and hyphen characters allowed
 
@@ -70,4 +70,8 @@ You can submit a support ticket at http://comluv.com
 
 * Link Format -> You can configure how the link is shown here. [username] will be replaced by the Twitter username of the user. Choose to open the link in a new window and if the link uses nofollow or not
 
-* Link Format -> manual : Use this if you want to control the position and format of the follow link. use `if($comment->twitlinkid){ // some code that uses $comment->twitlinkid }` example : `$twitterusername = $comment->twitlinkid; echo '<a href="http://twitter.com/'.$twitterusername.'">@'.$twitterusername.'</a>';` 
+* Link Format -> manual : Use this if you want to control the position and format of the follow link. use
+`if($comment->twitlinkid){ // some code that uses $comment->twitlinkid }`
+example :
+`$twitterusername = $comment->twitlinkid;
+echo '<a href="http://twitter.com/'.$twitterusername.'">@'.$twitterusername.'</a>';` 
