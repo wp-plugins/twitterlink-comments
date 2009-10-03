@@ -1,6 +1,6 @@
 <?php /* Twitterlink Comments
 Plugin Name: Twitterlink Comments
-Plugin URI: http://comluv.com/download/twitlink-comments
+Plugin URI: http://comluv.com/download/twitterlink-comments
 Description: Plugin to show a link to follow the comment author on twitter if they have entered in their username at least once in the comment form
 Version: 1.0
 Author: Andy Bailey
