@@ -71,6 +71,9 @@ You can submit a support ticket at http://comluv.com
 * Link Format -> You can configure how the link is shown here. [username] will be replaced by the Twitter username of the user. Choose to open the link in a new window and if the link uses nofollow or not
 
 * Link Format -> manual : Use this if you want to control the position and format of the follow link. use
-`if($comment->twitlinkid){ // some code that uses $comment->twitlinkid }`
-example :
-`$twitterusername = $comment->twitlinkid; echo '<a href="http://twitter.com/'.$twitterusername.'">@'.$twitterusername.'</a>';` 
+
+* `if($comment->twitlinkid){ // some code that uses $comment->twitlinkid }`
+
+* example :
+
+* `$twitterusername = $comment->twitlinkid; echo '<a href="http://twitter.com/'.$twitterusername.'">@'.$twitterusername.'</a>';` 
