@@ -10,7 +10,7 @@ Allow your commentators to include their Twitter username along with their comme
 
 == Description ==
 
-This plugin will adds an extra field to your comment form so a user can add their Twitter username. A user configured 'follow me' link is then displayed along with their details on all their comments.
+This plugin will add an extra field to your comment form so a user can add their Twitter username. A user configured 'follow me' link is then displayed along with their details on all their comments.
 
 The extra field and 'follow me' link can be configured using the settings page without ever needing to modify any template files. (unless you want to)
 
