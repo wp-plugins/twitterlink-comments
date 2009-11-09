@@ -4,7 +4,7 @@ Donate link:http://comluv.com/about/donate
 Tags: twitter, comment form, follow me
 Requires at least: 2.8
 Tested up to: 2.8.4
-Stable tag: 1.0
+Stable tag: 1.0.1
 	
 Allow your commentators to include their Twitter username along with their comment so a follow-me link can be displayed with their details on the list of comments.
 
@@ -26,7 +26,7 @@ WordpressMu : Same as above (do not place in mu-plugins)
 
 = Does this plugin add any database tables? =
 
-Yes. One table called (yourprefix)_wptwitipid is added
+Yes. One table called `(yourprefix)_wptwitipid` is added
 
 = How do I uninstall this plugin and the database table it creates? =
 
@@ -54,6 +54,9 @@ You can submit a support ticket at http://comluv.com
 2. in use
 
 == ChangeLog ==
+
+= 1.0.1 =
+* 09 Nov 2009 - Added German translation by http://martinwaiss.com/
 
 = 1.0 =
 * 27 Sep 2009 - First version.
