@@ -44,6 +44,9 @@ if (! class_exists ( 'twitlink' )) {
                     }
                     // filters for checking and adding twitter link
                     add_filter ( 'comments_array', array (&$this, 'add_twitlink_to_comment_array' ), 10 ); // check db for each email in comments array and add twitter username to each comments array if one exists
+                    // action for when comment gets spammed
+                    add_action ( 'wp_set_comment_status',array(&$this,'remove_spam_value'),10,2);
+                    
 		    // choose which filter to use depending on user setting of position
 		    $options = $this->get_options();
 		    if($options['manual'] == 'no'){
@@ -84,7 +87,7 @@ if (! class_exists ( 'twitlink' )) {
                             'auto_add' => 1,
                             'div_class' => 'twitlink',
 			    'input_class' => 'input',
-			    'pre_html' => '<br><small>',
+			    'pre_html' => '<small>',
 			    'field_description' => __('You can add a link to follow you on twitter if you put your username in this box.<br>Only needs to be added once (unless you change your username). No http or @',$this->plugin_domain),
 			    'post_html' => '</small> Twitter <br/>',
 			    'position' => 'under_name',
@@ -93,7 +96,8 @@ if (! class_exists ( 'twitlink' )) {
 			    'manual' => 'no',
 			    'pre_link_html' => '<br>Twitter: ',
 			    'anchor_text' => '[username]',
-			    'post_link_html' => '<br>'
+			    'post_link_html' => '<br>',
+                'link_class' => 'twitter-anywhere-user'
 			    
                             );
 			// get saved options unless reset button was pressed
@@ -127,12 +131,14 @@ if (! class_exists ( 'twitlink' )) {
 				$options['auto_add'] = $_POST['auto_add'];
 				$div_class = $_POST['div_class'];
 				$input_class = $_POST['input_class'];
+                $link_class = $_POST['link_class'];
 				// make sure class names are sanitary
-				if(!preg_match('/^[a-z0-9\-]+$/i', $div_class) || !preg_match('/^[a-z0-9\-]+$/i', $input_class)){
+				if(!preg_match('/^[a-z0-9\-]+$/i', $div_class) || !preg_match('/^[a-z0-9\-]+$/i', $input_class)|| !preg_match('/^[a-z0-9\-]+$/i', $link_class)){
 					 $errors->add('not_alphanum', __('CSS Classes can only contain letters, numbers and hyphen'));
 				} else {
 					$options['div_class'] = $div_class;
 					$options['input_class'] = $input_class;
+                    $options['link_class'] = $link_class;
 				}
 				$pre_html = $_POST['pre_html'];
 				$field_description = $_POST['field_description'];
@@ -241,8 +247,9 @@ if (! class_exists ( 'twitlink' )) {
 			$nofollow = $options['nofollow'] == 'yes'? ' rel="nofollow"' : '';
 			$newwindow = $options['newwindow'] == 'yes' ? 'target="_blank"' : 'target="_parent"';
 			$anchor = str_replace('[username]',$twitlinkid,$options['anchor_text']);
+            $link_class = $options['link_class'];
 			$link = $options['pre_link_html'].
-			'<a href="http://twitter.com/'.$twitlinkid.'"'.$nofollow.' '.$newwindow.'>'.
+			'<a class="'.$link_class.'" href="http://twitter.com/'.$twitlinkid.'"'.$nofollow.' '.$newwindow.'>'.
 			$anchor.'</a>'.
 			$options['post_link_html'];
 			return $link;
@@ -254,7 +261,7 @@ if (! class_exists ( 'twitlink' )) {
                     // check if user set manually inserted field in comments.php and add if not 
 		    if($options['auto_add']){
 			echo '<div class="'.$options['div_class'].'">'.$options['pre_html'].$options['field_description'];
-			echo '<br/><input id="atf_twitter_id" type="text" name="atf_twitter_id" class="'.$options['field_class'].'"/>'.$options['post_html'].'</div>';
+			echo '<input id="atf_twitter_id" type="text" name="atf_twitter_id" class="'.$options['field_class'].'"/>'.$options['post_html'].'</div>';
 			if($options['div_class'] == 'twitlink'){
 				// add style if using default class
 				echo '<style>.twitlink {border: 1px solid #d1d1d1; background-color: lightBlue; padding: 5px; margin: 5px;}</style>';
@@ -314,6 +321,18 @@ if (! class_exists ( 'twitlink' )) {
 			// load translation
 			load_textdomain ( $this->plugin_domain, $mofile );
 		}
+        
+        // remove spam value
+        function remove_spam_value($id,$status){
+            
+            if($status == 'spam'){
+                $tempcomment = get_comment($id);
+                $email = $tempcomment->comment_author_email;
+                global $wpdb;
+               $query = $wpdb->prepare("DELETE FROM {$wpdb->prefix}wptwitipid WHERE email = %s",$email);
+               $result = $wpdb->query($query); 
+            }
+        }
 		 
         }
 }

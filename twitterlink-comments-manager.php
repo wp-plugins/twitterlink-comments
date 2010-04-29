@@ -92,6 +92,8 @@ $(document).ready(function(){
 			    <td><input type="radio" name="newwindow" value="yes" <?php echo $options['newwindow'] == 'yes' ? 'checked' : '';?>/><?php _e('Yes',$this->plugin_domain);?><input type="radio" name="newwindow" value="no" <?php echo $options['newwindow'] == 'no' ? 'checked' : '';?>/><?php _e('No',$this->plugin_domain);?></td>
 			    <td><input type="radio" name="manual" value="yes" <?php echo $options['manual'] == 'yes' ? 'checked' : '';?>/><?php _e('Yes',$this->plugin_domain);?><input type="radio" name="manual" value="no" <?php echo $options['manual'] == 'no' ?  'checked' : '';?>/><?php _e('No',$this->plugin_domain);?></td>
 			</tr>
+            <tr><td><?php _e('Link Class',$this->plugin_domain);?></td></tr>
+            <tr><td><input type="text" name="link_class" value="<?php echo twitlink_deslashit(htmlspecialchars($options['link_class']));?>"/></td></tr>
 		    </table>
 		</dl>
 		<p>
@@ -132,6 +134,10 @@ $(document).ready(function(){
 			<p style="font-size: 8pt;"><?php _e('Many thanks to these people for providing translations',$this->plugin_domain);?></p>
 			<ul>
 			    <li><?php _e('Italian by',$this->plugin_domain);?> <a class="italian" href="http://gidibao.net/">Gianni</a></li>
+                <li><?php _e('German by',$this->plugin_domain);?> <a class="german" href="http://dieschatzen.at/">Mark Waiss</a></li>
+                <li><?php _e('French by',$this->plugin_domain);?> <a class="french" href="http://www.wptrads.fr">Didier</a></li>
+                <li><?php _e('Russian by',$this->plugin_domain);?> <a class="russian" href="http://yoyurec.in.ua">Yuriy</a></li>
+                <li><?php _e('Swedish by',$this->plugin_domain);?> <a class="swedish" href="http://minablandadeinfall.se/">Stefan Ljungwall</a></li>  
 			</ul>
 		    </dd>
 		</dl>

@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitterlink comments\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-03 09:45-0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Stefan Ljungwall <ljungwall@gmail.com>\n"
+"Language-Team: The ComLuv Network <admin@comluv.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED KINGDOM\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../twitterlink-comments.php:40
+msgid "Twitterlink requires Wordpress 2.8 or newer."
+msgstr "Twitterlink kräver Wordpress 2.8 eller senare."
+
+#: ../twitterlink-comments.php:40
+msgid "Please Update!"
+msgstr "Vänligen uppdatera!"
+
+#: ../twitterlink-comments.php:69
+msgid "TwitterLink Settings"
+msgstr "Twitterlink.inställningar"
+
+#: ../twitterlink-comments.php:76
+msgid "Settings"
+msgstr "Inställningar"
+
+#: ../twitterlink-comments.php:88
+msgid "You can add a link to follow you on twitter if you put your username in this box.<br>Only needs to be added once (unless you change your username). No http or @"
+msgstr "Du kan lägga till en länk för att följa dig på Twitter om du skriver ditt användarnamn i den här textrutan.Detta behöver bara göras en gång (om du inte byter användarnamn). Inget http eller @"
+
+#: ../twitterlink-comments.php:132
+msgid "CSS Classes can only contain letters, numbers and hyphen"
+msgstr "CSS.klasser kan innehålla bokstäver, siffror och bindestreck"
+
+#: ../twitterlink-comments.php:144
+msgid "Only 120 characters allowed in html"
+msgstr "Endast 120 tecken tillåtna i HTML"
+
+#: ../twitterlink-comments.php:163
+msgid "Some HTML tags were stripped (not in list of allowed tags)"
+msgstr "Vissa HTML-taggar raderades (inte i listan över tillåtna taggar)"
+
+#: ../twitterlink-comments.php:175
+msgid "There were errors with your chosen settings"
+msgstr "Det fanns fel i dina valda inställningar"
+
+#: ../twitterlink-comments.php:184
+msgid "Plugin settings saved."
+msgstr "Inställningarna sparade."
+
+#: ../twitterlink-comments-manager.php:32
+msgid "TwitterLink Comments"
+msgstr "TwitterLink Comments"
+
+#: ../twitterlink-comments-manager.php:33
+msgid "This plugin adds an extra field for the comment author to add their Twitter username so it can be displayed in the chosen position in the list of comments for a post.<br/>No template editing will be required unless you want to specify the exact look and postion of the field."
+msgstr "Detta plugin lägger till ett extra fält där kommentarförfattaren kan ange sitt Twitternamn och placera det på vald plats i kommentarlistan till ett inlägg.<br />Inget redigerande av mallen behövs, såvida du inte har valt att specificera exakt utseende och positionering av fältet."
+
+#: ../twitterlink-comments-manager.php:34
+msgid "Reset to default settings if you are having any problems"
+msgstr "Återställ till ursprungsinställningarna om du iupplever några problem"
+
+#: ../twitterlink-comments-manager.php:42
+msgid "Add Twitter Field Automatically?"
+msgstr "Lägga till Twitter-fält automatiskt?"
+
+#: ../twitterlink-comments-manager.php:45
+#: ../twitterlink-comments-manager.php:91
+#: ../twitterlink-comments-manager.php:92
+#: ../twitterlink-comments-manager.php:93
+msgid "Yes"
+msgstr "Ja"
+
+#: ../twitterlink-comments-manager.php:46
+#: ../twitterlink-comments-manager.php:91
+#: ../twitterlink-comments-manager.php:92
+#: ../twitterlink-comments-manager.php:93
+msgid "No"
+msgstr "Nej"
+
+#: ../twitterlink-comments-manager.php:48
+msgid "If you want to add the field yourself, please make sure it uses name=\"atf_twitter_id\" and is part of the &lt;form&gt; that contains the Name, email, url and comment fields"
+msgstr "Om du vill lägga till fältet manuellt, tillse att det använder name=\"atf_twitter_id\" och är en del av den &lt;form&gt; som innehåller Name, email, url och comment-fälten"
+
+#: ../twitterlink-comments-manager.php:51
+msgid "css classes"
+msgstr "CSS-klasser"
+
+#: ../twitterlink-comments-manager.php:52
+msgid "Class for the DIV used to wrap the field (for automatic added field)"
+msgstr "Klass för DIV:en som används för att omsluta fältet (för automatiskt tillagt fält)"
+
+#: ../twitterlink-comments-manager.php:55
+msgid "Class for the input field (for automatic added field)"
+msgstr "Klass för input-fältet (för automatiskt tillagt fält)"
+
+#: ../twitterlink-comments-manager.php:59
+msgid "Field Description"
+msgstr "Fältbeskrivning"
+
+#: ../twitterlink-comments-manager.php:61
+msgid "HTML before field description (maximum 120 characters)"
+msgstr "HTML före fältbeskrivningen (max 120 tecken)"
+
+#: ../twitterlink-comments-manager.php:63
+msgid "Text describing the added field (added before the input field)"
+msgstr "Text som beskriver det tillagda fältet (läggs före input-fältet)"
+
+#: ../twitterlink-comments-manager.php:65
+msgid "HTML after field description (maximum 120 characters)"
+msgstr "HTML efter beskrivningen (max 120 tecken)"
+
+#: ../twitterlink-comments-manager.php:69
+msgid "You can use the following tags only"
+msgstr "Du kan bara använda följande taggar"
+
+#: ../twitterlink-comments-manager.php:71
+#: ../twitterlink-comments-manager.php:72
+#: ../twitterlink-comments-manager.php:73
+msgid "can use"
+msgstr "kan använda"
+
+#: ../twitterlink-comments-manager.php:77
+msgid "Twitter Link Position"
+msgstr "Twitter Link-positionering"
+
+#: ../twitterlink-comments-manager.php:78
+msgid "Under Name Link"
+msgstr "Under Namnlänken"
+
+#: ../twitterlink-comments-manager.php:78
+msgid "Start of Comment Text"
+msgstr "Början av kommentartexten"
+
+#: ../twitterlink-comments-manager.php:78
+msgid "End of Comment Text"
+msgstr "Slutet av kommentartexten"
+
+#: ../twitterlink-comments-manager.php:86
+msgid "Link Format"
+msgstr "Länkformat"
+
+#: ../twitterlink-comments-manager.php:88
+msgid "HTML before link (max 120 chars)"
+msgstr "HTML före länk (max 120 tecken)"
+
+#: ../twitterlink-comments-manager.php:88
+msgid "Anchor Text (use [username] to show username) no html"
+msgstr "Anchor-text (använd [username] för att visa användarnamnet) ingen HTML"
+
+#: ../twitterlink-comments-manager.php:88
+msgid "HTML after link (max 120 chars)"
+msgstr "HTML efter länk (max 120 tecken)"
+
+#: ../twitterlink-comments-manager.php:90
+msgid "Use NoFollow?"
+msgstr "Använda NoFollow?"
+
+#: ../twitterlink-comments-manager.php:90
+msgid "Open in new window?"
+msgstr "Öppna i nytt fönster/ny flik?"
+
+#: ../twitterlink-comments-manager.php:90
+msgid "Manual Link?"
+msgstr "Manuell länk?"
+
+#: ../twitterlink-comments-manager.php:99
+msgid "Save Changes"
+msgstr "Spara ändringar"
+
+#: ../twitterlink-comments-manager.php:100
+msgid "Delete/Reset Settings"
+msgstr "Radera/Återställ inställningar"
+
+#: ../twitterlink-comments-manager.php:100
+msgid "Do you really want to delete/reset the plugin settings?"
+msgstr "Vil du verkligen radera/återställa inställningarna?"
+
+#: ../twitterlink-comments-manager.php:109
+msgid "Plugin"
+msgstr "Plugin"
+
+#: ../twitterlink-comments-manager.php:112
+msgid "Plugin Homepage"
+msgstr "Pluginets hemsida"
+
+#: ../twitterlink-comments-manager.php:113
+msgid "WordPress Support"
+msgstr "WordPress Support"
+
+#: ../twitterlink-comments-manager.php:120
+msgid "Do you like this plugin?"
+msgstr "Gillar du det här pluginet?"
+
+#: ../twitterlink-comments-manager.php:122
+msgid "I spend a lot of time on the plugins I have written for WordPress. Any donation would be highly appreciated."
+msgstr "Jag spenderar massor av tid på plugin-programmen som jag har skrivit för WordPress. Minsta donation uppskattas högeligen."
+
+#: ../twitterlink-comments-manager.php:124
+msgid "Donate via PayPal"
+msgstr "Donera via PayPal"
+
+#: ../twitterlink-comments-manager.php:130
+msgid "Translations"
+msgstr "Översättningar"
+
+#: ../twitterlink-comments-manager.php:132
+msgid "Many thanks to these people for providing translations"
+msgstr "Stort tack till dessa personer för gjorda översättingar"
+
+#: ../twitterlink-comments-manager.php:134
+msgid "Italian by"
+msgstr "Italienska av"
+

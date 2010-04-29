@@ -4,7 +4,7 @@ Donate link:http://comluv.com/about/donate
 Tags: twitter, comment form, follow me
 Requires at least: 2.8
 Tested up to: 2.8.4
-Stable tag: 1.0.1
+Stable tag: 1.1
 	
 Allow your commentators to include their Twitter username along with their comment so a follow-me link can be displayed with their details on the list of comments.
 
@@ -54,6 +54,14 @@ You can submit a support ticket at http://comluv.com
 2. in use
 
 == ChangeLog ==
+
+= 1.1 =
+* 21 April 2010 - Allow a class to be used for the link (compatibility with twitter anywhere)
+* Remove comment author email from table if comment is spammed manually or by the system. (thanks @travelwriting)
+* Removed hard coded line break in input field output (thanks Yuriy)
+* added French translation by Didier http://www.wptrads.fr
+* added Russian translation by Yuriy Piskun http://yoyurec.in.ua
+* added Swedish translation by Stefan Ljungwall http://minablandadeinfall.se/
 
 = 1.0.1 =
 * 09 Nov 2009 - Added German translation by http://martinwaiss.com/
