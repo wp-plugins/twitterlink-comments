@@ -16,12 +16,17 @@ $options=$this->get_options();
 $(document).ready(function(){
     if($('#auto_add').val() == 0) {
 	$('.auto_add_options').hide();
+    $('.use_profile_options').show();
+    } else {
+        $('.use_profile_options').hide();
     }
     $('#auto_add').change(function(){
 	if($(this).val() == 1){
 	    $('.auto_add_options').show();
+        $('.use_profile_options').hide();
 	} else {
 	    $('.auto_add_options').hide();
+        $('.use_profile_options').show();
 	}
 	});
     });
@@ -47,6 +52,20 @@ $(document).ready(function(){
 			</select>
 		<p><?php _e('If you want to add the field yourself, please make sure it uses name="atf_twitter_id" and is part of the &lt;form&gt; that contains the Name, email, url and comment fields',$this->plugin_domain)?></p>
 		</dl>
+        <dl class="use_profile_options">
+            <h3><?php _e('Profile Values',$this->plugin_domain);?></h3>
+            <?php _e('If you require users to be logged on to comment and are using a plugin like Twitter User that adds an extra field to the profile page then you can use the value saved to the users profile instead of using the extra field on the comment form.',$this->plugin_domain);?>
+            <p>
+            <label for="use_profile">Use value saved to profile for twitter username?</label>
+            <select name="use_profile" id="use_profile">
+                <option value="0" <?php selected('0',$options['use_profile']);?>><?php _e('No');?></option>
+                <option value="1" <?php selected('1',$options['use_profile']);?>><?php _e('Yes');?></option>
+            </select>
+            <p>
+            <label for="profile_field"><?php _e('Profile feed name. (usually "twitter")',$this->plugin_domain);?></label>
+            <input name="profile_field" id="profile_field" type="text" value="<?php echo $options['profile_field'];?>"/>
+            </p>
+        </dl>
 		<dl class="auto_add_options">
 		    <h3><?php _e('css classes',$this->plugin_domain)?></h3>
 		    <Label for="div_class"><?php _e('Class for the DIV used to wrap the field (for automatic added field)',$this->plugin_domain)?></Label>
@@ -118,6 +137,18 @@ $(document).ready(function(){
 
 		</dl>
 
+        <dl>
+            <dt></dt><h4><?php _e('News Updates',$this->plugin_domain);?></h4>
+            <dd>
+            <ul>
+                <?php 
+                                include_once(ABSPATH . WPINC . '/rss.php');
+                                @wp_rss('http://comluv.com/category/newsletter/feed',3);?>
+            </ul>            
+            </dd>
+
+        </dl>
+        
 		<dl>
 			<dt></dt><h4><?php _e('Do you like this plugin?',$this->plugin_domain);?></h4>
 			<dd>
@@ -137,7 +168,8 @@ $(document).ready(function(){
                 <li><?php _e('German by',$this->plugin_domain);?> <a class="german" href="http://dieschatzen.at/">Mark Waiss</a></li>
                 <li><?php _e('French by',$this->plugin_domain);?> <a class="french" href="http://www.wptrads.fr">Didier</a></li>
                 <li><?php _e('Russian by',$this->plugin_domain);?> <a class="russian" href="http://yoyurec.in.ua">Yuriy</a></li>
-                <li><?php _e('Swedish by',$this->plugin_domain);?> <a class="swedish" href="http://minablandadeinfall.se/">Stefan Ljungwall</a></li>  
+                <li><?php _e('Swedish by',$this->plugin_domain);?> <a class="swedish" href="http://minablandadeinfall.se/">Stefan Ljungwall</a></li>
+                <li><?php _e('Belorussian by',$this->plugin_domain);?> <a class="Belorussian" href="http://pc.de/">Patricia Clausnitzer</a></li>
 			</ul>
 		    </dd>
 		</dl>

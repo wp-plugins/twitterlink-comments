@@ -1,0 +1,223 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitterlink comments\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-03 09:45-0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Marcis G <zhr@tut.by>\n"
+"Language-Team: P.Clausnitzer <pat.clausnitzer@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Belarusian\n"
+"X-Poedit-Country: BELARUS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../twitterlink-comments.php:40
+msgid "Twitterlink requires Wordpress 2.8 or newer."
+msgstr "Убудове Twitterlink неабходны Wordpress 2.8 або старэй."
+
+#: ../twitterlink-comments.php:40
+msgid "Please Update!"
+msgstr "Калi ласка, абнавіцеся!"
+
+#: ../twitterlink-comments.php:69
+msgid "TwitterLink Settings"
+msgstr "TwitterLink"
+
+#: ../twitterlink-comments.php:76
+msgid "Settings"
+msgstr "Налады"
+
+#: ../twitterlink-comments.php:88
+msgid "You can add a link to follow you on twitter if you put your username in this box.<br>Only needs to be added once (unless you change your username). No http or @"
+msgstr "Увядзіце свой Twitter лагін, каб дадаць спасылку <strong>Follow me</strong>.<br>Лагін запамінаецца, досыць увесці адзін раз!"
+
+#: ../twitterlink-comments.php:132
+msgid "CSS Classes can only contain letters, numbers and hyphen"
+msgstr "Назоў CSS класа павінна ўтрымоўваць толькі літары, лічбы або злучок."
+
+#: ../twitterlink-comments.php:144
+msgid "Only 120 characters allowed in html"
+msgstr "У HTML дазволена выкарыстаць толькі 120 знакаў"
+
+#: ../twitterlink-comments.php:163
+msgid "Some HTML tags were stripped (not in list of allowed tags)"
+msgstr "Некаторыя тэгі або атрыбуты выдаленыя! Уважліва праверце спіс дазволеных тэгаў"
+
+#: ../twitterlink-comments.php:175
+msgid "There were errors with your chosen settings"
+msgstr "Адбылася памылка з вылучанымі наладамі"
+
+#: ../twitterlink-comments.php:184
+msgid "Plugin settings saved."
+msgstr "Налады захаваныя!"
+
+#: ../twitterlink-comments-manager.php:32
+msgid "TwitterLink Comments"
+msgstr "Каментары TwitterLink "
+
+#: ../twitterlink-comments-manager.php:33
+msgid "This plugin adds an extra field for the comment author to add their Twitter username so it can be displayed in the chosen position in the list of comments for a post.<br/>No template editing will be required unless you want to specify the exact look and postion of the field."
+msgstr "Убудова дазваляе дадаць да каментара спасылку на Twitter каментатара.<br>Для гэтага ў форму каментароў аўтаматычна дадаецца дадатковае поле ўводу, якое змяшчае лагін у Twitter'е."
+
+#: ../twitterlink-comments-manager.php:34
+msgid "Reset to default settings if you are having any problems"
+msgstr "Пры ўзнікненні праблем - скіньце налады ўбудовы"
+
+#: ../twitterlink-comments-manager.php:42
+msgid "Add Twitter Field Automatically?"
+msgstr "Дадаць поле Twitter'а ў форму аўтаматычна?"
+
+#: ../twitterlink-comments-manager.php:45
+#: ../twitterlink-comments-manager.php:91
+#: ../twitterlink-comments-manager.php:92
+#: ../twitterlink-comments-manager.php:93
+msgid "Yes"
+msgstr "Так"
+
+#: ../twitterlink-comments-manager.php:46
+#: ../twitterlink-comments-manager.php:91
+#: ../twitterlink-comments-manager.php:92
+#: ../twitterlink-comments-manager.php:93
+msgid "No"
+msgstr "Не"
+
+#: ../twitterlink-comments-manager.php:48
+msgid "If you want to add the field yourself, please make sure it uses name=\"atf_twitter_id\" and is part of the &lt;form&gt; that contains the Name, email, url and comment fields"
+msgstr "Пры даданні поля ўручную ўпэўніцеся, што ў яго варта атрыбут name=\"atf_twitter_id\", а само поле распожено ў &lt;form&gt; разам з астатнімі"
+
+#: ../twitterlink-comments-manager.php:51
+msgid "css classes"
+msgstr "CSS"
+
+#: ../twitterlink-comments-manager.php:52
+msgid "Class for the DIV used to wrap the field (for automatic added field)"
+msgstr "Клас у DIV'a, які змяшчае поле ўводу"
+
+#: ../twitterlink-comments-manager.php:55
+msgid "Class for the input field (for automatic added field)"
+msgstr "Клас для самога палі ўводу"
+
+#: ../twitterlink-comments-manager.php:59
+msgid "Field Description"
+msgstr "Апісанне"
+
+#: ../twitterlink-comments-manager.php:61
+msgid "HTML before field description (maximum 120 characters)"
+msgstr "HTML код перад апісаннем (max. 120 знакаў)"
+
+#: ../twitterlink-comments-manager.php:63
+msgid "Text describing the added field (added before the input field)"
+msgstr "Тэкст апісання (будзе паказаны перад полем уводу)"
+
+#: ../twitterlink-comments-manager.php:65
+msgid "HTML after field description (maximum 120 characters)"
+msgstr "HTML код пасля апiсання (max. 120 знакаў)"
+
+#: ../twitterlink-comments-manager.php:69
+msgid "You can use the following tags only"
+msgstr "Разрешеные тэгі"
+
+#: ../twitterlink-comments-manager.php:71
+#: ../twitterlink-comments-manager.php:72
+#: ../twitterlink-comments-manager.php:73
+msgid "can use"
+msgstr "можа ўтрымоўваць"
+
+#: ../twitterlink-comments-manager.php:77
+msgid "Twitter Link Position"
+msgstr "Размяшчэнне спасылкі"
+
+#: ../twitterlink-comments-manager.php:78
+msgid "Under Name Link"
+msgstr "Пад імем каментатара"
+
+#: ../twitterlink-comments-manager.php:78
+msgid "Start of Comment Text"
+msgstr "Перад тэкстам каментара"
+
+#: ../twitterlink-comments-manager.php:78
+msgid "End of Comment Text"
+msgstr "Пасля тэксту каментара"
+
+#: ../twitterlink-comments-manager.php:86
+msgid "Link Format"
+msgstr "Афармленне спасылкі"
+
+#: ../twitterlink-comments-manager.php:88
+msgid "HTML before link (max 120 chars)"
+msgstr "HTML перад спасылкай (max. 120 знакаў)"
+
+#: ../twitterlink-comments-manager.php:88
+msgid "Anchor Text (use [username] to show username) no html"
+msgstr "Тэкст спасылкі на твiттэр<br> (выкарыстайце [username] для ўстаўкі імя). HTML забаронены!"
+
+#: ../twitterlink-comments-manager.php:88
+msgid "HTML after link (max 120 chars)"
+msgstr "HTML пасля спасылкі (max. 120 знакаў)"
+
+#: ../twitterlink-comments-manager.php:90
+msgid "Use NoFollow?"
+msgstr "Дадаваць NoFollow?"
+
+#: ../twitterlink-comments-manager.php:90
+msgid "Open in new window?"
+msgstr "Адчыняць у новым акне?"
+
+#: ../twitterlink-comments-manager.php:90
+msgid "Manual Link?"
+msgstr "Самастойная спасылка?"
+
+#: ../twitterlink-comments-manager.php:99
+msgid "Save Changes"
+msgstr "Захаваць змены"
+
+#: ../twitterlink-comments-manager.php:100
+msgid "Delete/Reset Settings"
+msgstr "Скінуць налады"
+
+#: ../twitterlink-comments-manager.php:100
+msgid "Do you really want to delete/reset the plugin settings?"
+msgstr "Вы ўпэўненыя, што жадаеце выдаліць усе налады ўбудовы?"
+
+#: ../twitterlink-comments-manager.php:109
+msgid "Plugin"
+msgstr "Убудова"
+
+#: ../twitterlink-comments-manager.php:112
+msgid "Plugin Homepage"
+msgstr "Хатняя старонка ўбудовы"
+
+#: ../twitterlink-comments-manager.php:113
+msgid "WordPress Support"
+msgstr "Тэхпадтрымка для WordPress"
+
+#: ../twitterlink-comments-manager.php:120
+msgid "Do you like this plugin?"
+msgstr "Спадабаўся ўбудова?"
+
+#: ../twitterlink-comments-manager.php:122
+msgid "I spend a lot of time on the plugins I have written for WordPress. Any donation would be highly appreciated."
+msgstr "Я праводжу шмат часу за напісаннем убудоў да WordPress і буду вельмі рады любым унёскам."
+
+#: ../twitterlink-comments-manager.php:124
+msgid "Donate via PayPal"
+msgstr "Ахвяраваць праз PayPal"
+
+#: ../twitterlink-comments-manager.php:130
+msgid "Translations"
+msgstr "Пераклады"
+
+#: ../twitterlink-comments-manager.php:132
+msgid "Many thanks to these people for providing translations"
+msgstr "Вялiкi дзякуй перакладчыкам:"
+
+#: ../twitterlink-comments-manager.php:134
+msgid "Italian by"
+msgstr "Італьянскі - "
+

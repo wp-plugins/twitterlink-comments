@@ -4,7 +4,7 @@ Donate link:http://comluv.com/about/donate
 Tags: twitter, comment form, follow me
 Requires at least: 2.8
 Tested up to: 2.8.4
-Stable tag: 1.1
+Stable tag: 1.2
 	
 Allow your commentators to include their Twitter username along with their comment so a follow-me link can be displayed with their details on the list of comments.
 
@@ -44,6 +44,10 @@ This will only work with the standard WP comment form
 
 Yes, you can access the twitter username (if it exists) in $comment within the loop. Use `$username = $comment->twitlinkid` to retreive the username.
 
+= How do I add the extra field in the profile page for the twitter username for registered users? =
+
+see [http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields] (http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields)
+
 = I am having a problem getting it to work =
 
 You can submit a support ticket at http://comluv.com
@@ -53,7 +57,20 @@ You can submit a support ticket at http://comluv.com
 
 2. in use
 
+== Upgrade Notice ==
+
+= 1.2 =
+
+Add ability to use profile field value for twitter username
+Added : Belorussion translation - thanks http://pc.de/
+Updated : Settings page update
+
 == ChangeLog ==
+
+= 1.2 =
+* 11 November 2010 - Added ability to use profile field value for twittername when no adding a twitter field automatically. (thanks @opinionhead)
+* added : Belorussion language
+* updated : settings page updated
 
 = 1.1 =
 * 21 April 2010 - Allow a class to be used for the link (compatibility with twitter anywhere)
