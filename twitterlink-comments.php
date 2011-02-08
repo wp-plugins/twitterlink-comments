@@ -2,7 +2,7 @@
     Plugin Name: Twitterlink Comments
     Plugin URI: http://comluv.com/download/twitterlink-comments
     Description: Plugin to show a link to follow the comment author on twitter if they have entered in their username at least once in the comment form
-    Version: 1.2
+    Version: 1.25
     Author: Andy Bailey
     Author URI: http://comluv.com/
     Copyright (C) <2009>  <Andy Bailey>
@@ -160,7 +160,8 @@
                         'small' =>array(),
                         'p' =>array( 'class'=>array()),
                         'strong' => array(),
-                        'img' => array('src' => array(),'alt' => array(),'width' => array(),'height' => array(),'align'=> array())
+                        'img' => array('src' => array(),'alt' => array(),'width' => array(),'height' => array(),'align'=> array()),
+                        'span' => array('class'=>array())
                         );
                         // put html through kses filter with allowed tags (above) before saving
                         $options['pre_html'] = wp_kses($_POST['pre_html'],$allowedtags);

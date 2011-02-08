@@ -1,10 +1,10 @@
 === TwitterLink Comments ===
-Contributors: @commentluv (concept & coding) Gianni (translation and localization help)
+Contributors: commentluv (concept & coding) Gianni (translation and localization help)
 Donate link:http://comluv.com/about/donate
 Tags: twitter, comment form, follow me
 Requires at least: 2.8
-Tested up to: 2.8.4
-Stable tag: 1.2
+Tested up to: 3.1
+Stable tag: 1.25
 	
 Allow your commentators to include their Twitter username along with their comment so a follow-me link can be displayed with their details on the list of comments.
 
@@ -59,13 +59,15 @@ You can submit a support ticket at http://comluv.com
 
 == Upgrade Notice ==
 
-= 1.2 =
+= 1.25 =
 
-Add ability to use profile field value for twitter username
-Added : Belorussion translation - thanks http://pc.de/
-Updated : Settings page update
+Added <span> to list of allowed tags for before link html 
 
 == ChangeLog ==
+
+= 1.25 =
+* added : <span> with a class is now allowed to html before link in settings page.
+This will let you add `<span class="twitip">` to the 'html before link' and `</span>` to html after link for styling the added link better with css.
 
 = 1.2 =
 * 11 November 2010 - Added ability to use profile field value for twittername when no adding a twitter field automatically. (thanks @opinionhead)
