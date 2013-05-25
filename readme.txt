@@ -117,11 +117,3 @@ This will let you add `<span class="twitip">` to the 'html before link' and `</s
 * Twitter link position -> Choose where you want the link to be displayed in each comment within the list of comments
 
 * Link Format -> You can configure how the link is shown here. [username] will be replaced by the Twitter username of the user. Choose to open the link in a new window and if the link uses nofollow or not
-
-* Link Format -> manual : Use this if you want to control the position and format of the follow link. use
-
-* `if($comment->twitlinkid){ // some code that uses $comment->twitlinkid }`
-
-* example :
-
-* `$twitterusername = $comment->twitlinkid; echo '<a href="http://twitter.com/'.$twitterusername.'">@'.$twitterusername.'</a>';` 
