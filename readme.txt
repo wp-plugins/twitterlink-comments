@@ -48,6 +48,20 @@ Yes, you can access the twitter username (if it exists) in $comment within the l
 
 see [http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields] (http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields)
 
+= How do I add the extra field to the comment form if my theme uses `comment_form();` to output the form? =
+
+You can use this code to your functions.php file;
+
+`function add_twitter_username_field(){
+    echo "<p><label for=\"atf_twitter_id\">Twitter ID<br></label>"; 
+    echo "<input class=\"text_input\" type=\"text\" name=\"atf_twitter_id\" id=\"atf_twitter_id\" value=\"\" tabindex=\"4\" size=\"30\" />";
+    echo "</p>";
+
+}
+add_action('comment_form_after_fields','add_twitter_username_field');
+`
+(thanks to HKR at http://pixelate.co.cc for the code)
+
 = I am having a problem getting it to work =
 
 You can submit a support ticket at http://comluv.com
