@@ -22,7 +22,8 @@ The extra field and 'follow me' link can be configured using the settings page w
 The blog owner has full control over the classes, HTML, link and message by using the settings page. (All options are passed through KSES using only basic HTML tags for secruity on Mu installs)
 
 Here is how the plugin works
-[http://www.youtube.com/watch?v=e5u4xQdxgQ8]
+
+[youtube http://www.youtube.com/watch?v=e5u4xQdxgQ8]
 
 big thanks to the following beta testers
 [Jon Barry](http://jonbarry.co.uk/)
