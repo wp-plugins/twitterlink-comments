@@ -2,225 +2,458 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twitterlink comments in italiano\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-03 09:46-0000\n"
+"POT-Creation-Date: 2013-05-19 08:23-0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Andy Bailey <admin@comluv.com>\n"
+"Last-Translator: Andy Bailey <andrewgbailey@gmail.com>\n"
 "Language-Team: Gianni Diurno | http://gidibao.net/ <gidibao@gmail.com>\n"
+"Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Italian\n"
-"X-Poedit-Country: ITALY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: ../twitterlink-comments.php:40
-msgid "Twitterlink requires Wordpress 2.8 or newer."
+#: ../twitterlink-comments.php:46
+#, fuzzy
+msgid "Twitterlink requires Wordpress 3.0 or newer."
 msgstr "Il plugin Twitterlink richiede Wordpress 2.8 o superiore."
 
-#: ../twitterlink-comments.php:40
+#: ../twitterlink-comments.php:46
 msgid "Please Update!"
 msgstr "Aggiorna!"
 
-#: ../twitterlink-comments.php:69
-msgid "TwitterLink Settings"
-msgstr "Impostazioni TwitterLink"
+#: ../twitterlink-comments.php:169
+#, fuzzy
+msgid ""
+"You can add a link to follow you on twitter if you put your username in this "
+"box.<br />Only needs to be added once (unless you change your username). No "
+"http or @"
+msgstr ""
+"Inserisci nel box il tuo nome utente Twitter prima di inviare il commento."
+"<br>L'operazione non dovrà essere ripetuta (sino eventuale modifica "
+"dell'account). Niente http o @"
 
-#: ../twitterlink-comments.php:76
+#: ../twitterlink-comments.php:245
+msgid "Are you sure you want to reset the settings back to the default values?"
+msgstr ""
+
+#: ../twitterlink-comments.php:274
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: ../twitterlink-comments.php:88
-msgid "You can add a link to follow you on twitter if you put your username in this box.<br>Only needs to be added once (unless you change your username). No http or @"
-msgstr "Inserisci nel box il tuo nome utente Twitter prima di inviare il commento.<br>L'operazione non dovrà essere ripetuta (sino eventuale modifica dell'account). Niente http o @"
+#: ../twitterlink-comments.php:288
+msgid "Settings have been reset back to default values"
+msgstr ""
 
-#: ../twitterlink-comments.php:132
-msgid "CSS Classes can only contain letters, numbers and hyphen"
-msgstr "Le classi CSS possono contenere solo lettere, numeri e segni di interpunzione"
+#: ../twitterlink-comments.php:321
+msgid "Start Here"
+msgstr ""
 
-#: ../twitterlink-comments.php:144
-msgid "Only 120 characters allowed in html"
-msgstr "L'HTML permette solo 120 caratteri"
+#: ../twitterlink-comments.php:322
+msgid "Author"
+msgstr ""
 
-#: ../twitterlink-comments.php:163
-msgid "Some HTML tags were stripped (not in list of allowed tags)"
-msgstr "Alcuni tag HTML sono stati rimossi (poiché non presenti nella lista dei tag permessi)"
+#: ../twitterlink-comments.php:323
+msgid "Home Page"
+msgstr ""
 
-#: ../twitterlink-comments.php:175
-msgid "There were errors with your chosen settings"
-msgstr "Le tue impostazioni personalizzate hanno creato dei problemi"
+#: ../twitterlink-comments.php:324
+msgid "Social"
+msgstr ""
 
-#: ../twitterlink-comments.php:184
-msgid "Plugin settings saved."
-msgstr "Le impostazioni del plugin sono state salvate."
+#: ../twitterlink-comments.php:325
+msgid "Help"
+msgstr ""
 
-#: ../twitterlink-comments-manager.php:32
-msgid "TwitterLink Comments"
-msgstr "Commenti e TwitterLink"
+#: ../twitterlink-comments.php:325
+msgid "Help Desk"
+msgstr ""
 
-#: ../twitterlink-comments-manager.php:33
-msgid "This plugin adds an extra field for the comment author to add their Twitter username so it can be displayed in the chosen position in the list of comments for a post.<br/>No template editing will be required unless you want to specify the exact look and postion of the field."
-msgstr "Questo plugin aggiunge un campo extra per l'autore dei commenti in modo tale che egli possa inserire il proprio nome utente di Twitter e farlo apparire in una posizione di preferenza nella lista dei commenti di un articolo.<br/>Non sarà necessario modificare il template a patto che non si desideri personalizzare l'aspetto e/o la posizione del campo."
+#: ../twitterlink-comments.php:328
+msgid "Subscribe"
+msgstr ""
 
-#: ../twitterlink-comments-manager.php:34
-msgid "Reset to default settings if you are having any problems"
-msgstr "In caso di problemi, ripristinare alle impostazioni predefinite."
+#: ../twitterlink-comments.php:334
+msgid "I promise not to spam you or sell your details"
+msgstr ""
 
-#: ../twitterlink-comments-manager.php:42
-msgid "Add Twitter Field Automatically?"
-msgstr "Desideri aggiungere automaticamente il campo per Twitter?"
-
-#: ../twitterlink-comments-manager.php:45
-#: ../twitterlink-comments-manager.php:91
-#: ../twitterlink-comments-manager.php:92
-#: ../twitterlink-comments-manager.php:93
-msgid "Yes"
-msgstr "Sì"
-
-#: ../twitterlink-comments-manager.php:46
-#: ../twitterlink-comments-manager.php:91
-#: ../twitterlink-comments-manager.php:92
-#: ../twitterlink-comments-manager.php:93
-msgid "No"
-msgstr "No"
-
-#: ../twitterlink-comments-manager.php:48
-msgid "If you want to add the field yourself, please make sure it uses name=\"atf_twitter_id\" and is part of the &lt;form&gt; that contains the Name, email, url and comment fields"
-msgstr "Qualora gradissi aggiungere il campo in una posizione di tua preferenza, assicurati che venga utilizzato name=\"atf_twitter_id\" e la sua parte  &lt;form&gt; che contiene il Nome, la email, l'url ed i campi per i commenti"
-
-#: ../twitterlink-comments-manager.php:51
-msgid "css classes"
-msgstr "classi CSS"
-
-#: ../twitterlink-comments-manager.php:52
-msgid "Class for the DIV used to wrap the field (for automatic added field)"
-msgstr "Classe per il DIV utilizzato per il wrap del campo (per aggiunta automatica del campo)"
-
-#: ../twitterlink-comments-manager.php:55
-msgid "Class for the input field (for automatic added field)"
-msgstr "Classe per il campo input (per aggiunta automatica del campo)"
-
-#: ../twitterlink-comments-manager.php:59
-msgid "Field Description"
-msgstr "Descrizione per il campo"
-
-#: ../twitterlink-comments-manager.php:61
-msgid "HTML before field description (maximum 120 characters)"
-msgstr "HTML a precedere la descrizione (massimo 120 caratteri)"
-
-#: ../twitterlink-comments-manager.php:63
-msgid "Text describing the added field (added before the input field)"
-msgstr "Testo per la descrizione del campo (posizionato prima del campo di input)"
-
-#: ../twitterlink-comments-manager.php:65
-msgid "HTML after field description (maximum 120 characters)"
-msgstr "HTML a seguire la descrizione (massimo 120 caratteri)"
-
-#: ../twitterlink-comments-manager.php:69
-msgid "You can use the following tags only"
-msgstr "Potrai utilizzare i soli tag a seguire"
-
-#: ../twitterlink-comments-manager.php:71
-#: ../twitterlink-comments-manager.php:72
-#: ../twitterlink-comments-manager.php:73
-msgid "can use"
-msgstr "puoi usare"
-
-#: ../twitterlink-comments-manager.php:77
-msgid "Twitter Link Position"
-msgstr "Posizionamento link a Twitter"
-
-#: ../twitterlink-comments-manager.php:78
-msgid "Under Name Link"
-msgstr "sotto il link del nome"
-
-#: ../twitterlink-comments-manager.php:78
-msgid "Start of Comment Text"
-msgstr "prima del commento"
-
-#: ../twitterlink-comments-manager.php:78
-msgid "End of Comment Text"
-msgstr "in coda al commento"
-
-#: ../twitterlink-comments-manager.php:86
-msgid "Link Format"
-msgstr "Formato del link"
-
-#: ../twitterlink-comments-manager.php:88
-msgid "HTML before link (max 120 chars)"
-msgstr "HTML davanti al link (max 120 caratteri)"
-
-#: ../twitterlink-comments-manager.php:88
-msgid "Anchor Text (use [username] to show username) no html"
-msgstr "Testo link (usa [username] per mostrare il nome utente) no html"
-
-#: ../twitterlink-comments-manager.php:88
-msgid "HTML after link (max 120 chars)"
-msgstr "HTML dopo il link (max 120 caratteri)"
-
-#: ../twitterlink-comments-manager.php:90
-msgid "Use NoFollow?"
-msgstr "Attributo NoFollow?"
-
-#: ../twitterlink-comments-manager.php:90
-msgid "Open in new window?"
-msgstr "Apri in nuova finestra?"
-
-#: ../twitterlink-comments-manager.php:90
-msgid "Manual Link?"
-msgstr "Manuale di link?"
-
-#: ../twitterlink-comments-manager.php:99
-msgid "Save Changes"
-msgstr "Salva le modifiche"
-
-#: ../twitterlink-comments-manager.php:100
-msgid "Delete/Reset Settings"
-msgstr "Cancella/Ripristina"
-
-#: ../twitterlink-comments-manager.php:100
-msgid "Do you really want to delete/reset the plugin settings?"
-msgstr "Sei certo di volere cancellare/ripristinare le impostazioni del plugin?"
-
-#: ../twitterlink-comments-manager.php:109
-msgid "Plugin"
-msgstr "Plugin"
-
-#: ../twitterlink-comments-manager.php:112
-msgid "Plugin Homepage"
-msgstr "HomePage del plugin"
-
-#: ../twitterlink-comments-manager.php:113
-msgid "WordPress Support"
-msgstr "Supporto WordPress"
-
-#: ../twitterlink-comments-manager.php:120
-msgid "Do you like this plugin?"
-msgstr "Ti piace questo plugin?"
-
-#: ../twitterlink-comments-manager.php:122
-msgid "I spend a lot of time on the plugins I have written for WordPress. Any donation would be highly appreciated."
-msgstr "Ho trascorso molto del mio tempo per lo sviluppo di questo plugin per WordPress. Ogni donazione sarà bene accetta."
-
-#: ../twitterlink-comments-manager.php:124
-msgid "Donate via PayPal"
-msgstr "Donazione via PayPal"
-
-#: ../twitterlink-comments-manager.php:130
-msgid "Translations"
-msgstr "\tTraduzioni"
-
-#: ../twitterlink-comments-manager.php:132
+#: ../twitterlink-comments.php:341
 msgid "Many thanks to these people for providing translations"
 msgstr "Molte grazie a queste persone per la fornitura di traduzioni"
 
-#: ../twitterlink-comments-manager.php:134
+#: ../twitterlink-comments.php:343
 msgid "Italian by"
 msgstr "Italiano"
 
+#: ../twitterlink-comments.php:344
+msgid "German by"
+msgstr ""
+
+#: ../twitterlink-comments.php:345
+msgid "French by"
+msgstr ""
+
+#: ../twitterlink-comments.php:346
+#, fuzzy
+msgid "Russian by"
+msgstr "Italiano"
+
+#: ../twitterlink-comments.php:347
+msgid "Swedish by"
+msgstr ""
+
+#: ../twitterlink-comments.php:348
+msgid "Belorussian by"
+msgstr ""
+
+#: ../twitterlink-comments.php:579
+msgid "Email address is not valid"
+msgstr ""
+
+#: ../twitterlink-comments.php:589
+#, php-format
+msgid ""
+"Email %s added to list, please check your inbox for the confirmation link"
+msgstr ""
+
+#: ../twitterlink-comments.php:591
+msgid ""
+"oh dear! some error happened with sending the subscribe email, you may have "
+"to subscribe manually at ComLuv.com"
+msgstr ""
+
+#: ../include/options-page.php:10
+#, fuzzy
+msgid "Plugin Info"
+msgstr "Plugin"
+
+#: ../include/options-page.php:12
+msgid "Another Tab"
+msgstr ""
+
+#: ../include/options-page.php:16
+msgid "Adding the Twitter field"
+msgstr ""
+
+#: ../include/options-page.php:17
+msgid "Twitter Link Position"
+msgstr "Posizionamento link a Twitter"
+
+#: ../include/options-page.php:18
+#, fuzzy
+msgid "Twitter Link Format"
+msgstr "Commenti e TwitterLink"
+
+#: ../include/options-page.php:19
+msgid "Uninstall options"
+msgstr ""
+
+#: ../include/options-page.php:26
+#, fuzzy
+msgid "Plugin Settings"
+msgstr "Le impostazioni del plugin sono state salvate."
+
+#: ../include/options-page.php:28
+#, php-format
+msgid ""
+"This is the free version of TwitterLink Comments which is a light version of "
+"the TwitterLink that you get with %s (the premium version has much more "
+"functionality!)"
+msgstr ""
+
+#: ../include/options-page.php:95
+msgid ""
+"Choose the method you want to use to add the twitter field to your comment "
+"form"
+msgstr ""
+
+#: ../include/options-page.php:100
+msgid "Add field after name,email,url fields"
+msgstr ""
+
+#: ../include/options-page.php:101
+msgid "Only works with themes that use comment_form() to display form"
+msgstr ""
+
+#: ../include/options-page.php:104
+msgid "Form type"
+msgstr ""
+
+#: ../include/options-page.php:107
+msgid "3.0 Theme"
+msgstr ""
+
+#: ../include/options-page.php:108
+msgid "Alternate"
+msgstr ""
+
+#: ../include/options-page.php:114
+#, php-format
+msgid "Class for enclosing %s tag"
+msgstr ""
+
+#: ../include/options-page.php:118
+msgid "Class for input field"
+msgstr ""
+
+#: ../include/options-page.php:124
+msgid "Input label"
+msgstr ""
+
+#: ../include/options-page.php:130
+msgid "Label position"
+msgstr ""
+
+#: ../include/options-page.php:133
+msgid "After input"
+msgstr ""
+
+#: ../include/options-page.php:134
+msgid "Before input"
+msgstr ""
+
+#: ../include/options-page.php:142
+msgid "Add box after all comment form fields"
+msgstr ""
+
+#: ../include/options-page.php:143
+msgid "Use this if above option does not work with 3.0 theme or legacy"
+msgstr ""
+
+#: ../include/options-page.php:146
+msgid "Text to display inside box (html allowed)"
+msgstr ""
+
+#: ../include/options-page.php:151
+#, fuzzy
+msgid "Div class"
+msgstr "classi CSS"
+
+#: ../include/options-page.php:159
+msgid "Do not add a field. I will do it manually"
+msgstr ""
+
+#: ../include/options-page.php:162
+msgid "Please use name=\"atf_twitter_id\" in the field that you add"
+msgstr ""
+
+#: ../include/options-page.php:181
+#, fuzzy
+msgid "Under name link"
+msgstr "sotto il link del nome"
+
+#: ../include/options-page.php:185
+#, fuzzy
+msgid "Start of comment text"
+msgstr "prima del commento"
+
+#: ../include/options-page.php:188
+#, fuzzy
+msgid "End of comment text"
+msgstr "in coda al commento"
+
+#: ../include/options-page.php:202
+msgid "HTML before"
+msgstr ""
+
+#: ../include/options-page.php:206
+msgid "Anchor text"
+msgstr ""
+
+#: ../include/options-page.php:206
+msgid "will be replaced by users twitter ID"
+msgstr ""
+
+#: ../include/options-page.php:210
+msgid "HTML after"
+msgstr ""
+
+#: ../include/options-page.php:218
+msgid "Link attributes"
+msgstr ""
+
+#: ../include/options-page.php:222
+msgid "Make [username] clickable?"
+msgstr ""
+
+#: ../include/options-page.php:225
+msgid "Yes"
+msgstr "Sì"
+
+#: ../include/options-page.php:226
+msgid "No"
+msgstr "No"
+
+#: ../include/options-page.php:229
+msgid ""
+"If you are loading the twitter anywhere library then you might want to set "
+"this to No"
+msgstr ""
+
+#: ../include/options-page.php:234
+msgid "Dofollow the link?"
+msgstr ""
+
+#: ../include/options-page.php:237
+msgid "Open in new window?"
+msgstr "Apri in nuova finestra?"
+
+#: ../include/options-page.php:240
+msgid "Link class"
+msgstr ""
+
+#: ../include/options-page.php:251
+msgid ""
+"You can remove all options and the database table that this plugin created "
+"when you delete this plugin by ticking the boxes below"
+msgstr ""
+
+#: ../include/options-page.php:255
+#, fuzzy
+msgid "Delete options?"
+msgstr "Cancella/Ripristina"
+
+#: ../include/options-page.php:258
+msgid "Delete the twitlink database table?"
+msgstr ""
+
+#: ../include/options-page.php:262
+msgid ""
+"If you select to delete the table then all the twitter usernames that have "
+"been added from comments will no longer be available"
+msgstr ""
+
+#: ../include/options-page.php:264
+#, php-format
+msgid ""
+"If you are installing %s then you might want to keep the table so it can use "
+"it too and remember all the twitter names"
+msgstr ""
+
+#~ msgid "TwitterLink Settings"
+#~ msgstr "Impostazioni TwitterLink"
+
+#~ msgid "CSS Classes can only contain letters, numbers and hyphen"
+#~ msgstr ""
+#~ "Le classi CSS possono contenere solo lettere, numeri e segni di "
+#~ "interpunzione"
+
+#~ msgid "Only 120 characters allowed in html"
+#~ msgstr "L'HTML permette solo 120 caratteri"
+
+#~ msgid "Some HTML tags were stripped (not in list of allowed tags)"
+#~ msgstr ""
+#~ "Alcuni tag HTML sono stati rimossi (poiché non presenti nella lista dei "
+#~ "tag permessi)"
+
+#~ msgid "There were errors with your chosen settings"
+#~ msgstr "Le tue impostazioni personalizzate hanno creato dei problemi"
+
+#~ msgid ""
+#~ "This plugin adds an extra field for the comment author to add their "
+#~ "Twitter username so it can be displayed in the chosen position in the "
+#~ "list of comments for a post.<br/>No template editing will be required "
+#~ "unless you want to specify the exact look and postion of the field."
+#~ msgstr ""
+#~ "Questo plugin aggiunge un campo extra per l'autore dei commenti in modo "
+#~ "tale che egli possa inserire il proprio nome utente di Twitter e farlo "
+#~ "apparire in una posizione di preferenza nella lista dei commenti di un "
+#~ "articolo.<br/>Non sarà necessario modificare il template a patto che non "
+#~ "si desideri personalizzare l'aspetto e/o la posizione del campo."
+
+#~ msgid "Reset to default settings if you are having any problems"
+#~ msgstr "In caso di problemi, ripristinare alle impostazioni predefinite."
+
+#~ msgid "Add Twitter Field Automatically?"
+#~ msgstr "Desideri aggiungere automaticamente il campo per Twitter?"
+
+#~ msgid ""
+#~ "If you want to add the field yourself, please make sure it uses name="
+#~ "\"atf_twitter_id\" and is part of the &lt;form&gt; that contains the "
+#~ "Name, email, url and comment fields"
+#~ msgstr ""
+#~ "Qualora gradissi aggiungere il campo in una posizione di tua preferenza, "
+#~ "assicurati che venga utilizzato name=\"atf_twitter_id\" e la sua parte  "
+#~ "&lt;form&gt; che contiene il Nome, la email, l'url ed i campi per i "
+#~ "commenti"
+
+#~ msgid "Class for the DIV used to wrap the field (for automatic added field)"
+#~ msgstr ""
+#~ "Classe per il DIV utilizzato per il wrap del campo (per aggiunta "
+#~ "automatica del campo)"
+
+#~ msgid "Class for the input field (for automatic added field)"
+#~ msgstr "Classe per il campo input (per aggiunta automatica del campo)"
+
+#~ msgid "Field Description"
+#~ msgstr "Descrizione per il campo"
+
+#~ msgid "HTML before field description (maximum 120 characters)"
+#~ msgstr "HTML a precedere la descrizione (massimo 120 caratteri)"
+
+#~ msgid "Text describing the added field (added before the input field)"
+#~ msgstr ""
+#~ "Testo per la descrizione del campo (posizionato prima del campo di input)"
+
+#~ msgid "HTML after field description (maximum 120 characters)"
+#~ msgstr "HTML a seguire la descrizione (massimo 120 caratteri)"
+
+#~ msgid "You can use the following tags only"
+#~ msgstr "Potrai utilizzare i soli tag a seguire"
+
+#~ msgid "can use"
+#~ msgstr "puoi usare"
+
+#~ msgid "Link Format"
+#~ msgstr "Formato del link"
+
+#~ msgid "HTML before link (max 120 chars)"
+#~ msgstr "HTML davanti al link (max 120 caratteri)"
+
+#~ msgid "Anchor Text (use [username] to show username) no html"
+#~ msgstr "Testo link (usa [username] per mostrare il nome utente) no html"
+
+#~ msgid "HTML after link (max 120 chars)"
+#~ msgstr "HTML dopo il link (max 120 caratteri)"
+
+#~ msgid "Use NoFollow?"
+#~ msgstr "Attributo NoFollow?"
+
+#~ msgid "Manual Link?"
+#~ msgstr "Manuale di link?"
+
+#~ msgid "Save Changes"
+#~ msgstr "Salva le modifiche"
+
+#~ msgid "Do you really want to delete/reset the plugin settings?"
+#~ msgstr ""
+#~ "Sei certo di volere cancellare/ripristinare le impostazioni del plugin?"
+
+#~ msgid "Plugin Homepage"
+#~ msgstr "HomePage del plugin"
+
+#~ msgid "WordPress Support"
+#~ msgstr "Supporto WordPress"
+
+#~ msgid "Do you like this plugin?"
+#~ msgstr "Ti piace questo plugin?"
+
+#~ msgid ""
+#~ "I spend a lot of time on the plugins I have written for WordPress. Any "
+#~ "donation would be highly appreciated."
+#~ msgstr ""
+#~ "Ho trascorso molto del mio tempo per lo sviluppo di questo plugin per "
+#~ "WordPress. Ogni donazione sarà bene accetta."
+
+#~ msgid "Donate via PayPal"
+#~ msgstr "Donazione via PayPal"
+
+#~ msgid "Translations"
+#~ msgstr "\tTraduzioni"
+
 #~ msgid "Use manual call output?"
 #~ msgstr "manuale di uscita?"
-

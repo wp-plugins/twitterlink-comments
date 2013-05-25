@@ -1,20 +1,32 @@
 === TwitterLink Comments ===
 Contributors: commentluv (concept & coding) Gianni (translation and localization help)
 Donate link:http://comluv.com/about/donate
-Tags: twitter, comment form, follow me
-Requires at least: 2.8
+Tags: twitter, comment form, follow me, twitterlink, twitlinkid
+Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.25
+Stable tag: 1.3
 	
 Allow your commentators to include their Twitter username along with their comment so a follow-me link can be displayed with their details on the list of comments.
 
 == Description ==
+[Upgrade to TwitterLink Pro](http://www.commentluv.com "Upgrade to TwitterLink Pro")
+
+TwitterLink Pro is part of CommentLuv Premium and has even more amazing features that can bring even more traffic and comments to your blog by giving you the ability to fight spam, add keywords, integrate twitterlink, add a top commentators widget, social enticements and by having it installed on your site, you get advanced backlink features on EVERY CommentLuv blog when you comment (there are 10's of thousands of CommentLuv blogs)
+
+[About](http://www.commentluv.com/buy-commentluv-premium/what-is-twitterlink/ "About") | [Features](http://www.commentluv.com "Features") | [Pricing](http://www.commentluv.com "Pricing")
 
 This plugin will add an extra field to your comment form so a user can add their Twitter username. A user configured 'follow me' link is then displayed along with their details on all their comments.
 
 The extra field and 'follow me' link can be configured using the settings page without ever needing to modify any template files. (unless you want to)
 
 The blog owner has full control over the classes, HTML, link and message by using the settings page. (All options are passed through KSES using only basic HTML tags for secruity on Mu installs)
+
+Here is how the plugin works
+[http://www.youtube.com/watch?v=e5u4xQdxgQ8]
+
+big thanks to the following beta testers
+[Jon Barry](http://jonbarry.co.uk/)
+[Mark Hughes](http://www.funkysocialmedia.com)
 
 == Installation ==
 
@@ -30,7 +42,7 @@ Yes. One table called `(yourprefix)_wptwitipid` is added
 
 = How do I uninstall this plugin and the database table it creates? =
 
-Just deactivate it and use the `delete` link on the plugin page to remove the saved options and database table.
+Just deactivate it and use the `delete` link on the plugin page to remove the saved options and database table. (please tick the box for table removal in the settings)
 
 = I already use wp-twitip-id, is this compatible? =
 
@@ -39,28 +51,10 @@ Your exisiting db table for wp-twitip-id will be used. You may need to check you
 = Will this plugin work with Disqus/Intense Debate/js-kit? =
 
 This will only work with the standard WP comment form
-
-= I want to create the follow link myself, can I get the stored username from the comment via php? =
-
-Yes, you can access the twitter username (if it exists) in $comment within the loop. Use `$username = $comment->twitlinkid` to retreive the username.
-
+                                                                                                                                                     
 = How do I add the extra field in the profile page for the twitter username for registered users? =
 
 see [http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields] (http://justintadlock.com/archives/2009/09/10/adding-and-using-custom-user-profile-fields)
-
-= How do I add the extra field to the comment form if my theme uses `comment_form();` to output the form? =
-
-You can use this code to your functions.php file;
-
-`function add_twitter_username_field(){
-    echo "<p><label for=\"atf_twitter_id\">Twitter ID<br></label>"; 
-    echo "<input class=\"text_input\" type=\"text\" name=\"atf_twitter_id\" id=\"atf_twitter_id\" value=\"\" tabindex=\"4\" size=\"30\" />";
-    echo "</p>";
-
-}
-add_action('comment_form_after_fields','add_twitter_username_field');
-`
-(thanks to HKR at http://pixelate.co.cc for the code)
 
 = I am having a problem getting it to work =
 
@@ -73,11 +67,20 @@ You can submit a support ticket at http://comluv.com
 
 == Upgrade Notice ==
 
-= 1.25 =
+= 1.3 =
 
-Added <span> to list of allowed tags for before link html 
+Recoded to new WP3.0 standards and better uninstall routine 
 
 == ChangeLog ==
+
+= 1.3 =
+* complete rewrite
+* added : can use autoinsert of field if using wp3 theme
+* updated : improved validation of twitter name on comment submission
+* updated : more control over twitter field class
+
+= 1.27 = 
+* fixed : use profile value or comment form value had a bug. 
 
 = 1.25 =
 * added : <span> with a class is now allowed to html before link in settings page.
