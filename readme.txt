@@ -1,5 +1,5 @@
 === TwitterLink Comments ===
-Contributors: commentluv (concept & coding) Gianni (translation and localization help)
+Contributors: commentluv
 Donate link:http://comluv.com/about/donate
 Tags: twitter, comment form, follow me, twitterlink, twitlinkid
 Requires at least: 3.0
