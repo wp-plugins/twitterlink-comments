@@ -2,7 +2,7 @@
     Plugin Name: Twitterlink Comments
     Plugin URI: http://comluv.com/
     Description: Plugin to show a link to follow the comment author on twitter if they have entered in their username at least once in the comment form
-    Version: 1.30
+    Version: 1.31
     Author: Andy Bailey
     Author URI: http://comluv.com
     Copyright (C) <2011>  <Andy Bailey>
@@ -25,7 +25,7 @@
             var $includes_dir;
             var $image_url;
             var $db_option = 'twitlink';
-            var $version = '1.30';
+            var $version = '1.31';
             var $slug = 'twitlink-settings';
             var $hook;
 
@@ -583,7 +583,7 @@
             * 
             */
             function ab_subscribe(){
-                debugbreak();
+                //debugbreak();
                 $email = strip_tags($_POST['email']);
                 if(!is_email($email)){
                     _e('Email address is not valid',$this->plugin_domain);
@@ -596,7 +596,7 @@
                 remove_all_filters('wp_mail_from');
                 $success = wp_mail($to,$subject,'subscribe','From: '.$name.'<'.$email.'>'."\r\n");           
                 if($success){
-                    printf(__('Email %s added to list, please check your inbox for the confirmation link',$this->plugin_domain),$email);
+                    printf(__('Email %s added to list. please check your inbox for the confirmation link',$this->plugin_domain),$email);
                 } else {
                     _e('oh dear! some error happened with sending the subscribe email, you may have to subscribe manually at ComLuv.com',$this->plugin_domain);
                 }                                                                                                    

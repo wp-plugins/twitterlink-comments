@@ -3,8 +3,8 @@ Contributors: commentluv
 Donate link:http://comluv.com/about/donate
 Tags: twitter, comment form, follow me, twitterlink, twitlinkid
 Requires at least: 3.0
-Tested up to: 3.1
-Stable tag: 1.3
+Tested up to: 3.7
+Stable tag: 1.31
 	
 Allow your commentators to include their Twitter username along with their comment so a follow-me link can be displayed with their details on the list of comments.
 
@@ -68,11 +68,15 @@ You can submit a support ticket at http://comluv.com
 
 == Upgrade Notice ==
 
-= 1.3 =
+= 1.31 =
 
-Recoded to new WP3.0 standards and better uninstall routine 
+wp 3.7 compatibility 
 
 == ChangeLog ==
+
+= 1.3.1 =
+
+* updated : wp3.7 compatibility
 
 = 1.3 =
 * complete rewrite
