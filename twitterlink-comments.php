@@ -40,7 +40,7 @@
                 // pages where this plugin needs translation  (change if using custom menu)
                 $local_pages = array ('plugins.php', 'options-general.php' );
                 // check if translation needed on current page
-                if (in_array ( $pagenow, $local_pages ) || in_array ( $_GET ['page'], $local_pages )) {
+                if (in_array ( $pagenow, $local_pages ) || (isset($_GET['page']) && in_array ( $_GET ['page'], $local_pages ))) {
                     $this->handle_load_domain ();
                 }
                 $exit_msg = __( 'Twitterlink requires Wordpress 3.0 or newer.', $this->plugin_domain ) . '<a href="http://codex.wordpress.org/Upgrading_Wordpress">' . __ ( 'Please Update!', $this->plugin_domain ) . '</a>';
@@ -329,8 +329,8 @@
                             <tr>
                                 <td colspan="2">
                                     <?php
-                                        echo '<div id="sub_box"><p style="font-size: 1.3em; font-weight: bold">Get exclusive offers!</p>';
-                                        echo '<input type="text" size="40" id="sub_email" value="'.get_bloginfo('admin_email').'"/>';
+                                        echo '<div id="sub_box"><p style="font-size: 0.9em; font-weight: bold">Get exclusive offers!</p>';
+                                        echo '<input type="text" size="15" id="sub_email" value="'.get_bloginfo('admin_email').'"/>';
                                         echo '<br><img align="left" title="'.__('I promise not to spam you or sell your details',$this->plugin_domain).'" src="'.$this->image_url.'no_spam_button.jpg"/><span id="ab_sub_button" style="width: 100px; padding-top: 5px; border-top: 1px solid #cdcdcd; border-right: 1px solid #cdcdcd; border-bottom: 1px solid #ababab; border-left: 1px solid #ababab; display: block; text-align: center; float: right; cursor: pointer;">Subscribe</p>';    
                                         echo '</div>';
                                     ?>
