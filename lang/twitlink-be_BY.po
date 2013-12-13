@@ -1,0 +1,448 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitterlink comments\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-05-19 08:23-0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andy Bailey <andrewgbailey@gmail.com>\n"
+"Language-Team: P.Clausnitzer <pat.clausnitzer@gmail.com>\n"
+"Language: be_BY\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../twitterlink-comments.php:46
+#, fuzzy
+msgid "Twitterlink requires Wordpress 3.0 or newer."
+msgstr "Убудове Twitterlink неабходны Wordpress 2.8 або старэй."
+
+#: ../twitterlink-comments.php:46
+msgid "Please Update!"
+msgstr "Калi ласка, абнавіцеся!"
+
+#: ../twitterlink-comments.php:169
+#, fuzzy
+msgid ""
+"You can add a link to follow you on twitter if you put your username in this "
+"box.<br />Only needs to be added once (unless you change your username). No "
+"http or @"
+msgstr ""
+"Увядзіце свой Twitter лагін, каб дадаць спасылку <strong>Follow me</strong>."
+"<br>Лагін запамінаецца, досыць увесці адзін раз!"
+
+#: ../twitterlink-comments.php:245
+msgid "Are you sure you want to reset the settings back to the default values?"
+msgstr ""
+
+#: ../twitterlink-comments.php:274
+msgid "Settings"
+msgstr "Налады"
+
+#: ../twitterlink-comments.php:288
+msgid "Settings have been reset back to default values"
+msgstr ""
+
+#: ../twitterlink-comments.php:321
+msgid "Start Here"
+msgstr ""
+
+#: ../twitterlink-comments.php:322
+msgid "Author"
+msgstr ""
+
+#: ../twitterlink-comments.php:323
+msgid "Home Page"
+msgstr ""
+
+#: ../twitterlink-comments.php:324
+msgid "Social"
+msgstr ""
+
+#: ../twitterlink-comments.php:325
+msgid "Help"
+msgstr ""
+
+#: ../twitterlink-comments.php:325
+msgid "Help Desk"
+msgstr ""
+
+#: ../twitterlink-comments.php:328
+msgid "Subscribe"
+msgstr ""
+
+#: ../twitterlink-comments.php:334
+msgid "I promise not to spam you or sell your details"
+msgstr ""
+
+#: ../twitterlink-comments.php:341
+msgid "Many thanks to these people for providing translations"
+msgstr "Вялiкi дзякуй перакладчыкам:"
+
+#: ../twitterlink-comments.php:343
+msgid "Italian by"
+msgstr "Італьянскі - "
+
+#: ../twitterlink-comments.php:344
+msgid "German by"
+msgstr ""
+
+#: ../twitterlink-comments.php:345
+msgid "French by"
+msgstr ""
+
+#: ../twitterlink-comments.php:346
+#, fuzzy
+msgid "Russian by"
+msgstr "Італьянскі - "
+
+#: ../twitterlink-comments.php:347
+msgid "Swedish by"
+msgstr ""
+
+#: ../twitterlink-comments.php:348
+msgid "Belorussian by"
+msgstr ""
+
+#: ../twitterlink-comments.php:579
+msgid "Email address is not valid"
+msgstr ""
+
+#: ../twitterlink-comments.php:589
+#, php-format
+msgid ""
+"Email %s added to list, please check your inbox for the confirmation link"
+msgstr ""
+
+#: ../twitterlink-comments.php:591
+msgid ""
+"oh dear! some error happened with sending the subscribe email, you may have "
+"to subscribe manually at ComLuv.com"
+msgstr ""
+
+#: ../include/options-page.php:10
+#, fuzzy
+msgid "Plugin Info"
+msgstr "Убудова"
+
+#: ../include/options-page.php:12
+msgid "Another Tab"
+msgstr ""
+
+#: ../include/options-page.php:16
+msgid "Adding the Twitter field"
+msgstr ""
+
+#: ../include/options-page.php:17
+msgid "Twitter Link Position"
+msgstr "Размяшчэнне спасылкі"
+
+#: ../include/options-page.php:18
+#, fuzzy
+msgid "Twitter Link Format"
+msgstr "Каментары TwitterLink "
+
+#: ../include/options-page.php:19
+msgid "Uninstall options"
+msgstr ""
+
+#: ../include/options-page.php:26
+#, fuzzy
+msgid "Plugin Settings"
+msgstr "Налады захаваныя!"
+
+#: ../include/options-page.php:28
+#, php-format
+msgid ""
+"This is the free version of TwitterLink Comments which is a light version of "
+"the TwitterLink that you get with %s (the premium version has much more "
+"functionality!)"
+msgstr ""
+
+#: ../include/options-page.php:95
+msgid ""
+"Choose the method you want to use to add the twitter field to your comment "
+"form"
+msgstr ""
+
+#: ../include/options-page.php:100
+msgid "Add field after name,email,url fields"
+msgstr ""
+
+#: ../include/options-page.php:101
+msgid "Only works with themes that use comment_form() to display form"
+msgstr ""
+
+#: ../include/options-page.php:104
+msgid "Form type"
+msgstr ""
+
+#: ../include/options-page.php:107
+msgid "3.0 Theme"
+msgstr ""
+
+#: ../include/options-page.php:108
+msgid "Alternate"
+msgstr ""
+
+#: ../include/options-page.php:114
+#, php-format
+msgid "Class for enclosing %s tag"
+msgstr ""
+
+#: ../include/options-page.php:118
+msgid "Class for input field"
+msgstr ""
+
+#: ../include/options-page.php:124
+msgid "Input label"
+msgstr ""
+
+#: ../include/options-page.php:130
+msgid "Label position"
+msgstr ""
+
+#: ../include/options-page.php:133
+msgid "After input"
+msgstr ""
+
+#: ../include/options-page.php:134
+msgid "Before input"
+msgstr ""
+
+#: ../include/options-page.php:142
+msgid "Add box after all comment form fields"
+msgstr ""
+
+#: ../include/options-page.php:143
+msgid "Use this if above option does not work with 3.0 theme or legacy"
+msgstr ""
+
+#: ../include/options-page.php:146
+msgid "Text to display inside box (html allowed)"
+msgstr ""
+
+#: ../include/options-page.php:151
+#, fuzzy
+msgid "Div class"
+msgstr "CSS"
+
+#: ../include/options-page.php:159
+msgid "Do not add a field. I will do it manually"
+msgstr ""
+
+#: ../include/options-page.php:162
+msgid "Please use name=\"atf_twitter_id\" in the field that you add"
+msgstr ""
+
+#: ../include/options-page.php:181
+#, fuzzy
+msgid "Under name link"
+msgstr "Пад імем каментатара"
+
+#: ../include/options-page.php:185
+#, fuzzy
+msgid "Start of comment text"
+msgstr "Перад тэкстам каментара"
+
+#: ../include/options-page.php:188
+#, fuzzy
+msgid "End of comment text"
+msgstr "Пасля тэксту каментара"
+
+#: ../include/options-page.php:202
+msgid "HTML before"
+msgstr ""
+
+#: ../include/options-page.php:206
+msgid "Anchor text"
+msgstr ""
+
+#: ../include/options-page.php:206
+msgid "will be replaced by users twitter ID"
+msgstr ""
+
+#: ../include/options-page.php:210
+msgid "HTML after"
+msgstr ""
+
+#: ../include/options-page.php:218
+msgid "Link attributes"
+msgstr ""
+
+#: ../include/options-page.php:222
+msgid "Make [username] clickable?"
+msgstr ""
+
+#: ../include/options-page.php:225
+msgid "Yes"
+msgstr "Так"
+
+#: ../include/options-page.php:226
+msgid "No"
+msgstr "Не"
+
+#: ../include/options-page.php:229
+msgid ""
+"If you are loading the twitter anywhere library then you might want to set "
+"this to No"
+msgstr ""
+
+#: ../include/options-page.php:234
+msgid "Dofollow the link?"
+msgstr ""
+
+#: ../include/options-page.php:237
+msgid "Open in new window?"
+msgstr "Адчыняць у новым акне?"
+
+#: ../include/options-page.php:240
+msgid "Link class"
+msgstr ""
+
+#: ../include/options-page.php:251
+msgid ""
+"You can remove all options and the database table that this plugin created "
+"when you delete this plugin by ticking the boxes below"
+msgstr ""
+
+#: ../include/options-page.php:255
+#, fuzzy
+msgid "Delete options?"
+msgstr "Скінуць налады"
+
+#: ../include/options-page.php:258
+msgid "Delete the twitlink database table?"
+msgstr ""
+
+#: ../include/options-page.php:262
+msgid ""
+"If you select to delete the table then all the twitter usernames that have "
+"been added from comments will no longer be available"
+msgstr ""
+
+#: ../include/options-page.php:264
+#, php-format
+msgid ""
+"If you are installing %s then you might want to keep the table so it can use "
+"it too and remember all the twitter names"
+msgstr ""
+
+#~ msgid "TwitterLink Settings"
+#~ msgstr "TwitterLink"
+
+#~ msgid "CSS Classes can only contain letters, numbers and hyphen"
+#~ msgstr ""
+#~ "Назоў CSS класа павінна ўтрымоўваць толькі літары, лічбы або злучок."
+
+#~ msgid "Only 120 characters allowed in html"
+#~ msgstr "У HTML дазволена выкарыстаць толькі 120 знакаў"
+
+#~ msgid "Some HTML tags were stripped (not in list of allowed tags)"
+#~ msgstr ""
+#~ "Некаторыя тэгі або атрыбуты выдаленыя! Уважліва праверце спіс дазволеных "
+#~ "тэгаў"
+
+#~ msgid "There were errors with your chosen settings"
+#~ msgstr "Адбылася памылка з вылучанымі наладамі"
+
+#~ msgid ""
+#~ "This plugin adds an extra field for the comment author to add their "
+#~ "Twitter username so it can be displayed in the chosen position in the "
+#~ "list of comments for a post.<br/>No template editing will be required "
+#~ "unless you want to specify the exact look and postion of the field."
+#~ msgstr ""
+#~ "Убудова дазваляе дадаць да каментара спасылку на Twitter каментатара."
+#~ "<br>Для гэтага ў форму каментароў аўтаматычна дадаецца дадатковае поле "
+#~ "ўводу, якое змяшчае лагін у Twitter'е."
+
+#~ msgid "Reset to default settings if you are having any problems"
+#~ msgstr "Пры ўзнікненні праблем - скіньце налады ўбудовы"
+
+#~ msgid "Add Twitter Field Automatically?"
+#~ msgstr "Дадаць поле Twitter'а ў форму аўтаматычна?"
+
+#~ msgid ""
+#~ "If you want to add the field yourself, please make sure it uses name="
+#~ "\"atf_twitter_id\" and is part of the &lt;form&gt; that contains the "
+#~ "Name, email, url and comment fields"
+#~ msgstr ""
+#~ "Пры даданні поля ўручную ўпэўніцеся, што ў яго варта атрыбут name="
+#~ "\"atf_twitter_id\", а само поле распожено ў &lt;form&gt; разам з астатнімі"
+
+#~ msgid "Class for the DIV used to wrap the field (for automatic added field)"
+#~ msgstr "Клас у DIV'a, які змяшчае поле ўводу"
+
+#~ msgid "Class for the input field (for automatic added field)"
+#~ msgstr "Клас для самога палі ўводу"
+
+#~ msgid "Field Description"
+#~ msgstr "Апісанне"
+
+#~ msgid "HTML before field description (maximum 120 characters)"
+#~ msgstr "HTML код перад апісаннем (max. 120 знакаў)"
+
+#~ msgid "Text describing the added field (added before the input field)"
+#~ msgstr "Тэкст апісання (будзе паказаны перад полем уводу)"
+
+#~ msgid "HTML after field description (maximum 120 characters)"
+#~ msgstr "HTML код пасля апiсання (max. 120 знакаў)"
+
+#~ msgid "You can use the following tags only"
+#~ msgstr "Разрешеные тэгі"
+
+#~ msgid "can use"
+#~ msgstr "можа ўтрымоўваць"
+
+#~ msgid "Link Format"
+#~ msgstr "Афармленне спасылкі"
+
+#~ msgid "HTML before link (max 120 chars)"
+#~ msgstr "HTML перад спасылкай (max. 120 знакаў)"
+
+#~ msgid "Anchor Text (use [username] to show username) no html"
+#~ msgstr ""
+#~ "Тэкст спасылкі на твiттэр<br> (выкарыстайце [username] для ўстаўкі імя). "
+#~ "HTML забаронены!"
+
+#~ msgid "HTML after link (max 120 chars)"
+#~ msgstr "HTML пасля спасылкі (max. 120 знакаў)"
+
+#~ msgid "Use NoFollow?"
+#~ msgstr "Дадаваць NoFollow?"
+
+#~ msgid "Manual Link?"
+#~ msgstr "Самастойная спасылка?"
+
+#~ msgid "Save Changes"
+#~ msgstr "Захаваць змены"
+
+#~ msgid "Do you really want to delete/reset the plugin settings?"
+#~ msgstr "Вы ўпэўненыя, што жадаеце выдаліць усе налады ўбудовы?"
+
+#~ msgid "Plugin Homepage"
+#~ msgstr "Хатняя старонка ўбудовы"
+
+#~ msgid "WordPress Support"
+#~ msgstr "Тэхпадтрымка для WordPress"
+
+#~ msgid "Do you like this plugin?"
+#~ msgstr "Спадабаўся ўбудова?"
+
+#~ msgid ""
+#~ "I spend a lot of time on the plugins I have written for WordPress. Any "
+#~ "donation would be highly appreciated."
+#~ msgstr ""
+#~ "Я праводжу шмат часу за напісаннем убудоў да WordPress і буду вельмі рады "
+#~ "любым унёскам."
+
+#~ msgid "Donate via PayPal"
+#~ msgstr "Ахвяраваць праз PayPal"
+
+#~ msgid "Translations"
+#~ msgstr "Пераклады"
