@@ -1,15 +1,5 @@
 jQuery(document).ready(function(){
-    jQuery('.fancybox-media').fancybox({
-        maxWidth    : 660,
-        maxHeight    : 380,
-        fitToView    : false,
-        width        : '70%',
-        height        : '70%',
-        autoSize    : false,
-        closeClick    : false,
-        openEffect    : 'none',
-        closeEffect    : 'none'
-    });
+    
     // email sub event
     jQuery('#ab_sub_button').live('click',function(){
         var email = jQuery('#sub_email').val();

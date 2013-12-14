@@ -68,17 +68,23 @@ You can submit a support ticket at http://comluv.com
 
 == Upgrade Notice ==
 
-= 1.32 =
+= 1.33 =
 
-wp 3.8 compatibility 
+wp 3.8 compatibility
+
+= 1.31 =
+
+wp 3.7 compatibility 
 
 == ChangeLog ==
 
-= 1.3.2 =
+= 1.33 =
 
-* updated: wp3.8 compatibility
-* fixed : undefined index on $_GET['page']
-* fixed : sidebar width back to normal (adjusted input text 'size' attribute)
+* updated : removed fancybox 
+
+= 1.32 =
+
+* updated : wp3.8 compatibility
 
 = 1.3.1 =
 

@@ -2,13 +2,13 @@
     Plugin Name: Twitterlink Comments
     Plugin URI: http://comluv.com/
     Description: Plugin to show a link to follow the comment author on twitter if they have entered in their username at least once in the comment form
-    Version: 1.31
+    Version: 1.33
     Author: Andy Bailey
     Author URI: http://comluv.com
     Copyright (C) <2011>  <Andy Bailey>
 
     // uses andy bailey skeleton framework for wp3.2 compatible plugins v0.8
-    last updated 08 March 2013
+    last updated 13 Dec 2013
 
     */
 
@@ -25,7 +25,7 @@
             var $includes_dir;
             var $image_url;
             var $db_option = 'twitlink';
-            var $version = '1.31';
+            var $version = '1.33';
             var $slug = 'twitlink-settings';
             var $hook;
 
@@ -40,7 +40,7 @@
                 // pages where this plugin needs translation  (change if using custom menu)
                 $local_pages = array ('plugins.php', 'options-general.php' );
                 // check if translation needed on current page
-                if (in_array ( $pagenow, $local_pages ) || (isset($_GET['page']) && in_array ( $_GET ['page'], $local_pages ))) {
+                if (in_array ( $pagenow, $local_pages ) || in_array ( $_GET ['page'], $local_pages )) {
                     $this->handle_load_domain ();
                 }
                 $exit_msg = __( 'Twitterlink requires Wordpress 3.0 or newer.', $this->plugin_domain ) . '<a href="http://codex.wordpress.org/Upgrading_Wordpress">' . __ ( 'Please Update!', $this->plugin_domain ) . '</a>';
@@ -196,10 +196,10 @@
                 register_setting( 'twitlink_options_group', $this->db_option ,array(&$this,'options_sanitize' ) );
                 // admin scripts
                 wp_register_script( 'twitlink_script', $this->plugin_url.'js/script.js',array('jquery'),$this->version );
-                wp_register_script( 'twitlink_fancybox', $this->plugin_url.'js/jquery.fancybox.js',array('jquery'),$this->version );
+                //wp_register_script( 'twitlink_fancybox', $this->plugin_url.'js/jquery.fancybox.js',array('jquery'),$this->version );
                 //wp_register_script( 'twitlink_fancybox-media', $this->plugin_url.'js/jquery.fancybox-media.js',array('jquery'),$this->version );
                 // admin styles
-                wp_register_style( 'twitlink_fancybox_style', $this->plugin_url.'style/jquery.fancybox.css',NULL,$this->version);
+                //wp_register_style( 'twitlink_fancybox_style', $this->plugin_url.'style/jquery.fancybox.css',NULL,$this->version);
                 // plugin settings
                 $settings = array ('plugin_name' => 'twitlink','author_name' => 'Andy Bailey', 'home_page' => 'http://www.commentluv.com',
                     'twitter_id' => 'commentluv','linkedin_id' => 'commentluv','facebook_page' => 'http://www.facebook.com/CommentLuv',
@@ -232,10 +232,12 @@
                 wp_enqueue_script('common');
                 wp_enqueue_script('wp-lists');
                 wp_enqueue_script('postbox');
-                wp_enqueue_script('twitlink_script');
-                wp_enqueue_script('twitlink_fancybox');
+                //wp_enqueue_script('twitlink_script');
+                //wp_enqueue_script('twitlink_fancybox');
+                wp_enqueue_script('thickbox',null,array('jquery'));
+                echo "<link rel='stylesheet' href='/".WPINC."/js/thickbox/thickbox.css?ver=".$this->version."' type='text/css' media='all' />\n";
                 //wp_enqueue_script('twitlink_fancybox-media');
-                wp_enqueue_style('twitlink_fancybox_style');
+                //wp_enqueue_style('twitlink_fancybox_style');
                 // removeable metaboxes 
                 //debugbreak();
                 add_meta_box('twitlink_removable','Ads','twitlink_removeable_metabox',$this->hook,'normal');
@@ -318,7 +320,8 @@
                 <table class="widefat">
                     <tbody>
                         <?php //debugbreak();?>
-                        <tr><td colspan="2"><center><div style="background: url(<?php echo $this->image_url;?>playbutton.png); text-align: center; font-size: 1.4em; width: 228px; height: 44px; overflow: hidden;"><br><?php _e('Start Here',$this->plugin_domain);?></div><div><a class="fancybox-media fancybox.iframe" href="<?php echo $this->video_url;?>"><img src="<?php echo $this->image_url;?>playbuttonfront.png"/></a></div></center></td></tr>
+                        <tr><td colspan="2"><center><div style="background: url(<?php echo $this->image_url;?>playbutton.png); text-align: center; font-size: 1.4em; width: 228px; height: 44px; overflow: hidden;"><br><?php _e('Start Here',$this->plugin_domain);?></div><div>
+                        <a onclick="return false;" href="<?php echo $this->video_url ; ?>starthere.php?KeepThis=true&amp;TB_iframe=true&amp;height=355&width=545" class="thickbox"><img src="<?php echo $this->image_url;?>playbuttonfront.png"/></a></div></center></td></tr>
                         <tr><td><strong><?php _e('Author',$this->plugin_domain);?>:</strong></td><td><?php echo $this->author_name;?></td></tr>
                         <tr><td><strong><?php _e('Home Page',$this->plugin_domain);?>:</strong></td><td><a href="<?php echo $this->home_page;?>" target="_blank"><?php echo $this->home_page;?></a></td></tr>
                         <tr><td><strong><?php _e('Social',$this->plugin_domain);?>:</strong></td><td><a title="Follow <?php echo $this->twitter_id;?> on Twitter" href="http://twitter.com/<?php echo $this->twitter_id;?>/" target="_blank"><img src="<?php echo $this->image_url;?>twitter.png"/></a> <a title="Join me on LinkedIn" href="http://uk.linkedin.com/in/<?php echo $this->linkedin_id;?>" target="_blank"><img src="<?php echo $this->image_url;?>linkedin.png"/></a> <a title="Join me on Facebook" href="<?php $this->facebook_page;?>" target="_blank"><img src="<?php echo $this->image_url;?>facebook.png"/></a></td></tr>
