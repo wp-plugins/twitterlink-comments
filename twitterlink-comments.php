@@ -2,7 +2,7 @@
     Plugin Name: Twitterlink Comments
     Plugin URI: http://comluv.com/
     Description: Plugin to show a link to follow the comment author on twitter if they have entered in their username at least once in the comment form
-    Version: 1.33
+    Version: 1.34
     Author: Andy Bailey
     Author URI: http://comluv.com
     Copyright (C) <2011>  <Andy Bailey>
@@ -40,7 +40,7 @@
                 // pages where this plugin needs translation  (change if using custom menu)
                 $local_pages = array ('plugins.php', 'options-general.php' );
                 // check if translation needed on current page
-                if (in_array ( $pagenow, $local_pages ) || in_array ( $_GET ['page'], $local_pages )) {
+                if (in_array ( $pagenow, $local_pages ) || (isset($_GET['page']) && in_array ( $_GET ['page'], $local_pages ))) {
                     $this->handle_load_domain ();
                 }
                 $exit_msg = __( 'Twitterlink requires Wordpress 3.0 or newer.', $this->plugin_domain ) . '<a href="http://codex.wordpress.org/Upgrading_Wordpress">' . __ ( 'Please Update!', $this->plugin_domain ) . '</a>';
@@ -509,7 +509,7 @@
                 $profiletwitter = false;
                 $dbtwitter = $wpdb->get_var($wpdb->prepare("SELECT twitid FROM {$wpdb->prefix}wptwitipid WHERE email = %s",$email));
                 // set this->twitter_id
-                if($options['use_profile'] == 'on'){
+                if(isset($options['use_profile']) && $options['use_profile'] == 'on'){
                     $user = get_user_by_email($email);
                     $id = $user->ID;
                     if($options['profile_field']){

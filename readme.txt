@@ -3,8 +3,8 @@ Contributors: commentluv
 Donate link:http://comluv.com/about/donate
 Tags: twitter, comment form, follow me, twitterlink, twitlinkid
 Requires at least: 3.0
-Tested up to: 3.7
-Stable tag: 1.32
+Tested up to: 3.8
+Stable tag: 1.34
 	
 Allow your commentators to include their Twitter username along with their comment so a follow-me link can be displayed with their details on the list of comments.
 
@@ -67,6 +67,11 @@ You can submit a support ticket at http://comluv.com
 2. in use
 
 == Upgrade Notice ==
+
+= 1.34 =
+
+readme and remove fancybox
+fixed:  undefined indexes on checkbox options check
 
 = 1.33 =
 
