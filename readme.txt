@@ -68,6 +68,10 @@ You can submit a support ticket at http://comluv.com
 
 == Upgrade Notice ==
 
+= 1.35 =
+
+wp 4.0 compatibility
+
 = 1.34 =
 
 readme and remove fancybox

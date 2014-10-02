@@ -2,7 +2,7 @@
     Plugin Name: Twitterlink Comments
     Plugin URI: http://comluv.com/
     Description: Plugin to show a link to follow the comment author on twitter if they have entered in their username at least once in the comment form
-    Version: 1.34
+    Version: 1.35
     Author: Andy Bailey
     Author URI: http://comluv.com
     Copyright (C) <2011>  <Andy Bailey>
@@ -25,7 +25,7 @@
             var $includes_dir;
             var $image_url;
             var $db_option = 'twitlink';
-            var $version = '1.33';
+            var $version = '1.35';
             var $slug = 'twitlink-settings';
             var $hook;
 
